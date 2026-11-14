@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Моя Анечка – кофейня-кондитерская в Воронеже</title>
+<meta name="description" content="Корпусные десерты ручной работы, кофе, завтраки и домашние пельмени. Воронеж, ул. Плехановская, 43. +7 (919) 185-71-00">
+<link rel="icon" href="img/favicon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Marck+Script&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="preloader" aria-hidden="true">
+  <img src="img/face.png" alt="">
+  <span>Моя Анечка</span>
+</div>
+
+<div class="cursor" aria-hidden="true"></div>
+
+<header class="header">
+  <a class="logo" href="#top"><img src="img/face.png" alt=""><span>Моя Анечка</span></a>
+  <nav>
+    <a href="#desserts">Десерты</a>
+    <a href="#menu">Меню</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <a class="pill magnetic" href="tel:+79191857100">+7 (919) 185-71-00</a>
+</header>
+
+<main id="top">
+
+  <!-- 1. Первый экран -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="script">кофейня-кондитерская</p>
+      <h1>
+        <span class="line"><span>Это не</span></span>
+        <span class="line"><span class="swap"><b>яблоко.</b><b>гранат.</b><b>мишка.</b><b>лимон.</b><b>арахис.</b></span></span>
+        <span class="line"><span>Это <em>десерт.</em></span></span>
+      </h1>
+      <p class="hero-sub">Корпусные пирожные ручной работы, которые не отличить от настоящих фруктов и игрушек. Снаружи – шедевр, внутри – нежный мусс и ягодная начинка.</p>
+      <div class="hero-btns">
+        <a class="btn magnetic" href="#desserts">Смотреть десерты</a>
+        <a class="btn ghost magnetic" href="#contacts">Как нас найти</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="blob"></div>
+      <img class="hero-main" src="img/hero-apple.jpg" alt="Корпусный десерт в форме яблока на мху">
+      <img class="float f1" src="img/k-bears.jpg" alt="" data-depth="30">
+      <img class="float f2" src="img/k-piglet.jpg" alt="" data-depth="-24">
+      <img class="float f3" src="img/k-lemons.jpg" alt="" data-depth="18">
+      <img class="sticker" src="img/face.png" alt="" data-depth="-40">
+    </div>
+  </section>
+
+  <!-- 2. Бегущие ленты -->
+  <div class="tapes" aria-hidden="true">
+    <div class="tape tape-pink"><div class="tape-in">
+      <span>корпусные десерты</span><i>♥</i><span>кофе</span><i>♥</i><span>молочные коктейли</span><i>♥</i><span>завтраки</span><i>♥</i><span>пельмени-капуста</span><i>♥</i>
+      <span>корпусные десерты</span><i>♥</i><span>кофе</span><i>♥</i><span>молочные коктейли</span><i>♥</i><span>завтраки</span><i>♥</i><span>пельмени-капуста</span><i>♥</i>
+    </div></div>
+    <div class="tape tape-ink"><div class="tape-in">
+      <span>Плехановская, 43</span><i>✦</i><span>сделано руками</span><i>✦</i><span>жалко есть</span><i>✦</i><span>но придётся</span><i>✦</i>
+      <span>Плехановская, 43</span><i>✦</i><span>сделано руками</span><i>✦</i><span>жалко есть</span><i>✦</i><span>но придётся</span><i>✦</i>
+    </div></div>
+  </div>
+
+  <!-- 3. Манифест: слова проявляются при прокрутке -->
+  <section class="manifest">
+    <p class="manifest-text">Мы делаем десерты, которые сначала фотографируют, а потом съедают. Снаружи – гранат, арахис или розовый поросёнок, а внутри мусс, ганаш и ягодная начинка. Каждый – маленький гастро-сувенир ручной работы.</p>
+  </section>
+
+  <!-- 4. Угадай вкус: горизонтальная прокрутка -->
+  <section class="guess" id="desserts">
+    <div class="guess-track">
+      <div class="guess-intro">
+        <p class="script">угадай вкус</p>
+        <h2>Фрукт или пирожное?</h2>
+        <p>Листайте дальше – мы покажем, что внутри.</p>
+        <span class="arrow">→</span>
+      </div>
+      <article class="guess-card" style="--c:#ffd84a"><img src="img/f-lemon.jpg" alt="Корпусный десерт Лимон" loading="lazy"><h3>Лимон</h3><p>Лимонный мусс, начинка лимон</p></article>
+      <article class="guess-card" style="--c:#ff6b81"><img src="img/f-strawberry.jpg" alt="Корпусный десерт Клубника" loading="lazy"><h3>Клубника</h3><p>Клубничный мусс, начинка клубника</p></article>
+      <article class="guess-card" style="--c:#8b5a3c"><img src="img/f-coffee.jpg" alt="Корпусный десерт Кофейное зерно" loading="lazy"><h3>Кофейное зерно</h3><p>Кофейный мусс, сливочная карамель</p></article>
+      <article class="guess-card" style="--c:#e2335f"><img src="img/f-raspberry.jpg" alt="Корпусный десерт Малина" loading="lazy"><h3>Малина</h3><p>Малиновый мусс, начинка малина</p></article>
+      <article class="guess-card" style="--c:#c8d64a"><img src="img/f-pear.jpg" alt="Корпусный десерт Груша" loading="lazy"><h3>Груша</h3><p>Сезонный вкус – спрашивайте на витрине</p></article>
+      <article class="guess-card" style="--c:#ffc93c"><img src="img/f-banana.jpg" alt="Корпусный десерт Банан" loading="lazy"><h3>Банан</h3><p>Сезонный вкус – спрашивайте на витрине</p></article>
+    </div>
+  </section>
+
+  <!-- 5. Витрина корпусных десертов -->
+  <section class="showcase">
+    <div class="wrap">
+      <div class="head">
+        <p class="script">витрина</p>
+        <h2 class="split">Зверушки, фрукты и немножко магии</h2>
+      </div>
+      <div class="cards">
+        <article class="card tilt"><img src="img/k-pomegranate.jpg" alt="Десерт Гранат" loading="lazy"><div><h3>Гранат</h3><p>Шоколадный ганаш, начинка гранат</p></div></article>
+        <article class="card tilt"><img src="img/k-piglet.jpg" alt="Десерт Поросёнок" loading="lazy"><div><h3>Поросёнок</h3><p>Мусс с корицей, начинка вишня</p></div></article>
+        <article class="card tilt"><img src="img/k-peanut.jpg" alt="Десерт Арахис" loading="lazy"><div><h3>Арахис</h3><p>Кофейный мусс и арахисовая паста</p></div></article>
+        <article class="card tilt"><img src="img/k-bear.jpg" alt="Десерт Мишка" loading="lazy"><div><h3>Мишка</h3><p>Птичье молоко, начинка m&amp;m's и вафля</p></div></article>
+        <article class="card tilt"><img src="img/k-bears.jpg" alt="Десерт Парочка мишек" loading="lazy"><div><h3>Парочка мишек</h3><p>Ванильный и шоколадный мусс, начинка черника</p></div></article>
+        <article class="card tilt"><img src="img/k-cheese.jpg" alt="Десерт Сыр" loading="lazy"><div><h3>Сыр</h3><p>Чизкейк со смородиной</p></div></article>
+        <article class="card tilt"><img src="img/k-balls.jpg" alt="Корпусные шарики-чизкейк" loading="lazy"><div><h3>Шарики-чизкейк</h3><p>Малина, смородина, манго-маракуйя, клубника</p></div></article>
+        <article class="card tilt"><img src="img/k-pumpkin.jpg" alt="Десерт Тыква" loading="lazy"><div><h3>Тыква</h3><p>Сезонная новинка</p></div></article>
+      </div>
+      <p class="more">А ещё Хинкали, Мухомор, Олененок, Барашек, Лягушка, Корова, Перец и другие – ассортимент на витрине меняется.</p>
+    </div>
+  </section>
+
+  <!-- 6. Цифры -->
+  <section class="numbers">
+    <div class="wrap">
+      <div><b data-count="20">0</b><b>+</b><span>видов корпусных десертов</span></div>
+      <div><b data-count="5" data-dec="1">0</b><b>★</b><span>оценка гостей ВКонтакте</span></div>
+      <div><b data-count="1300">0</b><b>+</b><span>подписчиков в сообществе</span></div>
+    </div>
+  </section>
+
+  <!-- 7. Меню -->
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="head">
+        <p class="script">не только сладкое</p>
+        <h2 class="split">Вкусное меню от Анечки</h2>
+      </div>
+      <div class="menu-grid">
+        <div class="tabs" role="tablist">
+          <button class="tab on" role="tab" data-tab="0">Завтраки</button>
+          <button class="tab" role="tab" data-tab="1">Супы</button>
+          <button class="tab" role="tab" data-tab="2">Вареники</button>
+          <button class="tab" role="tab" data-tab="3">Пельмени</button>
+        </div>
+        <div class="panels">
+          <ul class="panel on">
+            <li><span>Яичница-болтунья</span><b>290 ₽</b></li>
+            <li><span>Сырники солёные с укропом</span><b>460 ₽</b></li>
+            <li><span>Сырники солёные с вялеными томатами</span><b>480 ₽</b></li>
+            <li><span>Сырники классические</span><b>420 ₽</b></li>
+            <li><span>Сырники с кокосом</span><b>460 ₽</b></li>
+            <li><span>Сырники с цедрой лимона и апельсина</span><b>460 ₽</b></li>
+            <li><span>Сметана или сгущённое молоко</span><b>60 ₽</b></li>
+          </ul>
+          <ul class="panel">
+            <li><span>Борщ домашний</span><b>430 ₽</b></li>
+            <li><span>Солянка с копчёностями</span><b>470 ₽</b></li>
+          </ul>
+          <ul class="panel">
+            <li><span>С картофелем и луком</span><b>290 ₽</b></li>
+            <li><span>С картофелем и грибами</span><b>320 ₽</b></li>
+          </ul>
+          <ul class="panel">
+            <li><span>Розовые в форме капусты (индейка)</span><b>490 ₽</b></li>
+            <li><span>Зелёные в форме капусты (свинина-говядина)</span><b>490 ₽</b></li>
+          </ul>
+        </div>
+        <div class="menu-photos">
+          <img class="mp on" src="img/cozy.jpg" alt="Десерт и кофе в кофейне" loading="lazy">
+          <img class="mp" src="img/soup.jpg" alt="Борщ домашний" loading="lazy">
+          <img class="mp" src="img/pelmeni.jpg" alt="Вареники ручной лепки" loading="lazy">
+          <img class="mp" src="img/pelmeni.jpg" alt="Пельмени в форме капусты" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Напитки + заморозка + подарки -->
+  <section class="trio">
+    <div class="wrap">
+      <article class="trio-card big" data-speed="0.92">
+        <img src="img/drinks.jpg" alt="Лимонад и айс-латте" loading="lazy">
+        <div><p class="script">напитки</p><h3>Кофе, лимонады и молочные коктейли</h3></div>
+      </article>
+      <article class="trio-card" data-speed="1.08">
+        <img src="img/pelmeni.jpg" alt="Замороженные сырники, вареники и пельмени" loading="lazy">
+        <div><p class="script">возьми с собой</p><h3>Заморозка: сырники, вареники, пельмени</h3><p>Как домашнее, только быстрее</p></div>
+      </article>
+      <article class="trio-card" data-speed="0.96">
+        <img src="img/gifts.jpg" alt="Десерты в подарочных коробках" loading="lazy">
+        <div><p class="script">в подарок</p><h3>Гастро-сувенир в красивой коробке</h3><p>Удобный формат десерта «с собой»</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 9. Отзывы -->
+  <section class="reviews" id="reviews">
+    <div class="wrap head">
+      <p class="script">отзывы</p>
+      <h2 class="split">Гости влюбляются с первой ложки</h2>
+    </div>
+    <div class="rev-track">
+      <article class="rev"><span class="stars">★★★★★</span><p>Уютная атмосфера, вкуснейший кофе и просто божественно вкусные пирожные. Прикупили подарочек на 1 сентября учителю – не удержались!</p><footer><b>Татьяна П.</b><span>сентябрь</span></footer></article>
+      <article class="rev"><span class="stars">★★★★★</span><p>Очень вкусные десерты и большой выбор вкусов. Думала остановлюсь только на мороженом, но нет – не смогла устоять перед такими красивыми зверушками. Свин потрясающий и очень вкусный. Спасибо за шедевр! Рекомендую!</p><footer><b>Настя А.</b><span>июль</span></footer></article>
+      <article class="rev"><span class="stars">★★★★★</span><p>Заглянули с дочкой в кафе на Плехановской – и просто влюбились! Такая уютная и стильная атмосфера. Пирожные буквально тают во рту. А ещё попробовали пельмени – чувствуется, что они ручной лепки, настоящие, домашние.</p><footer><b>Елена П.</b><span>ноябрь</span></footer></article>
+      <article class="rev"><span class="stars">★★★★★</span><p>Сегодня мы посетили кафе «Моя Анечка», и это было просто волшебно! Это место, где создаётся настоящая сказка. Интерьер здесь красивый и нежный, что создаёт невероятный уют…</p><footer><b>Карина К.</b><span>ноябрь</span></footer></article>
+      <article class="rev"><span class="stars">★★★★★</span><p>Очень вкусно, необычно и с интересной подачей) Приду ещё!</p><footer><b>Елена М.</b><span>сентябрь</span></footer></article>
+    </div>
+  </section>
+
+  <!-- 10. Контакты -->
+  <section class="contacts" id="contacts">
+    <div class="wrap">
+      <div class="contact-info">
+        <img class="wave" src="img/face.png" alt="">
+        <h2 class="split">Заходите в гости</h2>
+        <dl>
+          <div><dt>Адрес</dt><dd>Воронеж, ул. Плехановская, 43</dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+79191857100">+7 (919) 185-71-00</a></dd></div>
+        </dl>
+        <div class="hero-btns">
+          <a class="btn light magnetic" href="https://vk.me/my_anechka" target="_blank" rel="noopener">Написать ВКонтакте</a>
+          <a class="btn ghost-light magnetic" href="tel:+79191857100">Позвонить</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?text=%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%2C%20%D0%9F%D0%BB%D0%B5%D1%85%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2043&z=16" title="Моя Анечка на карте" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <img src="img/logo.png" alt="Моя Анечка – кондитерская">
+  <a href="https://vk.ru/my_anechka" target="_blank" rel="noopener">vk.ru/my_anechka</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
